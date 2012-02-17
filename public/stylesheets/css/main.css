@@ -1,0 +1,576 @@
+body { 
+	height: 100%;
+	width:100%;
+	margin:0;
+	background-color: #E3E4FA;
+	font-family:arial;
+}
+h1 {
+	font-size:150%;
+}
+	
+p {
+	font-size:100%
+}
+
+div.helpful_hint{
+	clear:both;
+	color:orange;
+	font-weight:bold;
+	font-size:125%;
+	padding:5px 5px 5px 5px;
+}
+
+.rounded{
+	padding:5px 5px 5px 5px;
+	border:2px solid;
+	border-color: #2B547E;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Firefox 3.6 and earlier */
+}
+
+div.login_link{
+	padding: 5px 10px 5px 10px;
+	margin:5px;
+	float:right;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Firefox 3.6 and earlier */
+}
+
+div.login_link:hover{
+	background-color:#2B547E;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+div.login_link .a:hover{
+	cursor:pointer;
+	text-decoration:none;
+}
+
+#header{
+	color:gray;
+	width:100%;
+}
+
+#header a{
+	color:white;
+	text-decoration:none;
+}
+
+#header a:hover{
+	text-decoration:none;
+	cursor:pointer;
+}
+
+table{
+	font-family:arial;
+	border-collapse: collapse;
+	padding: 0px 50px 0px 50px;
+}
+
+td.small_padding(
+	padding: 10px 10px 10px 10px;
+	margin:10px 10px 10px 10px;
+)
+
+td.logo{
+	vertical-align:top;
+	width:50%;
+}
+
+td.login{
+	vertical-align:top;
+	text-align:right;
+	font-weight:bold;
+	width:50%;
+	color:white;
+	padding: 10px 10px 10px 10px;
+}
+
+td.login_link:hover{
+	background-color:#2B547E;
+}
+
+td.word_cloud a{
+	color:#2B547E;
+	font-size:100%;
+	font-weight:bold;
+	cursor:pointer;
+	padding: 10px 10px 10px 10px;
+}
+td.word_cloud a:hover{
+	text-decoration:underline;
+}
+
+td.rank a{
+	color:#2B547E;
+	font-weight:bold;
+	font-size:125%;
+}
+td.stats{
+	color:black;
+	text-align:right;
+	padding: 0px 10px 0px 10px;
+}
+
+div.big_button{
+	color:white;
+	background-color:#2B547E;
+	padding:5px 5px 5px 5px;
+	margin:10px;
+	margin-left:auto;
+	font-size:150%;
+	margin-right:auto;
+	font-weight:bold;
+	width:110px;
+	text-align:center;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Firefox 3.6 and earlier */
+	cursor:pointer;
+}
+
+div.display_results{
+	text-align:left;
+	width:700px;
+	padding:5px 10px 10px 5px;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+div.survey_questions{
+	text-align:left;
+	width:1000px;
+	padding:5px 10px 10px 5px;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border-color:#2B547E;
+}
+div.bite_placeholder{
+	text-align:left;
+	width:700px;
+	padding:5px 10px 10px 5px;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+td.bite_placeholder_text{
+	padding:5px 20px 10px 20px;
+}
+div.display_results a{
+	text-decoration:none;
+	color:black;
+}
+
+div.footer{
+	text-align:center;
+	font-size:120%;
+	width:800px;
+	border:5px solid;
+	border-color:#2B547E;
+	border-bottom:0px;
+	padding:10px 10px 10px 10px;
+	background-color:white;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-border-top-left-radius: 12px;
+	-webkit-border-top-right-radius: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright: 12px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px; 
+}
+
+
+a:link {
+	color: #2B60DE;
+}
+
+a:hover {
+	color: purple
+}
+
+a:visited {
+	color: purple
+}
+td.item_name a:link{
+	text-decoration:none;
+}
+td.item_name a:hover{
+	text-decoration:underline;
+}
+td.claim{
+	color:black;
+	font-size:120%;
+	font-family:arial;
+	padding:0px 5px 0px 5px;
+}
+
+td.claim_image{
+	width:100px;
+	height:100px;
+	padding:0px 5px 0px 5px;
+	text-align:center;
+	cursor:pointer;
+}
+td.search_image{
+	width:100px;
+	height:100px;
+	padding:0px 20px 0px 0px;
+	text-align:center;
+}
+td.middle{
+	vertical-align:middle;
+}
+td.details_container{
+	font-size:90%;
+	font-family:arial;
+	z-index:10;
+}
+
+div.claim_published{
+	color:gray;
+	float:left;
+	padding:0px 5px 0px 5px;
+	border:2px solid;
+	border-color:white;
+	width:250px;
+}
+
+#below_header{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.central_container{
+	font-family:arial;
+	width:800px;
+	border:5px solid;
+	border-color:#2B547E;
+	background-color: white;
+	padding:10px 10px 10px 10px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:15px;
+	-moz-border-radius:12px; /* Firefox 3.6 and earlier */
+}
+
+p{
+	line-height:150%;
+	margin:10px;
+}
+
+#wrapper { 
+position:absolute; 
+right:0; 
+top:0; 
+padding:0px;
+width:100%; 
+height:100%; /* works only if parent container is assigned a height value */ 
+color:#333;
+background-color:#B4CFEC;
+background-image:url('~/images/background.png');
+background-size: 100% 100%;
+}
+
+.options { 
+	list-style: none;
+}
+.options li { 
+	color:#2B547E;
+	background-color:#B4CFEC;
+	padding:5px 5px 5px 5px;
+	margin:2px;
+	font-weight:bold;
+	float:left;
+	width:110px;
+	text-align:center;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	cursor:pointer;	
+	/* So the psueudo elements can be abs. positioned inside */
+	position: relative; 
+}
+.options li:hover{
+	background-color:#2B547E;
+	color:white;
+}
+.options .selected{
+	background-color:#2B547E;
+	color:white;
+}
+.selected{
+	background-color:#2B547E;
+	color:white;
+}
+
+/* This is the beginning of the CSS for the rounded tabs. */
+/* CSS-Tricks Example by Chris Coyier http://css-tricks.com */
+#content {
+	min-height: 400px; 
+}
+
+.tabs { 
+	font-family:arial;
+	list-style: none; 
+	margin: 0px auto 0; 
+	width: 660px;
+}
+.tabs li { 
+	/* Makes a horizontal row */
+	float: left; 
+	/* So the psueudo elements can be abs. positioned inside */
+	position: relative; 
+}
+.tabs a { 
+	/* Make them block level and only as wide as they need */
+	float: left; 
+	padding: 10px 40px; 
+	text-decoration: none;
+	border:3px solid;
+	border-bottom:0px;
+	border-color:#2B547E;
+	color: #2B547E;
+	background-color: white; 
+	font-weight:bold;
+	font-size:20px;
+	/* Only round the top corners */
+	-webkit-border-top-left-radius: 12px;
+	-webkit-border-top-right-radius: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright: 12px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px; 
+}
+.tabs a:hover {
+	text-decoration:underline;
+}
+.tabs .active a:hover {
+	text-decoration:none;
+}
+.tabs .active {
+	/* Highest, active tab is on top */
+	z-index: 3;
+}
+.tabs .active a { 
+	/* Colors when tab is active */
+	/* Old color = #2B547E */
+	background-color: #2B547E; 
+	color: white;
+	font-weight:bold;
+	font-size:20px;
+	border:3px solid;
+	border-bottom:0px;
+	border-color:#2B547E;
+	cursor:default;
+}
+.tabs li:before, .tabs li:after, .tabs li a:before, .tabs li a:after {
+	/* All pseudo elements are abs. positioned and on bottom */
+	position: absolute;
+	bottom: 0;
+}
+	/* Only the first, last, and active tabs need pseudo elements at all */
+.tabs li:last-child:after,   .tabs li:last-child a:after,
+.tabs li:first-child:before, .tabs li:first-child a:before,
+.tabs .active:after,   .tabs .active:before, 
+.tabs .active a:after, .tabs .active a:before {
+	content: "";
+}
+.tabs .active:before, .tabs .active:after {
+	background-color: #2B547E; 
+	/* Squares below circles */
+	z-index: 1;
+}
+/* Squares */
+.tabs li:before, .tabs li:after {
+	background-color: #B4CFEC;
+	width: 5px;
+	height: 5px;
+}
+.tabs li:before {
+	left: -5px;      
+}
+.tabs li:after { 
+	right: -5px;
+}
+/* Circles */
+.tabs li a:before {
+	left: -13px;
+}
+.tabs li a:after {
+	right: -13px;
+}
+.tabs li a:before {
+	width: 10px; 
+	height: 10px;
+	/* Circles are circular */
+	-webkit-border-radius: 25px;
+	-moz-border-radius:    25px;
+	border-radius:         25px;
+	background-color: #B4CFEC;
+	left: -10px;
+	/* Circles over squares */
+	z-index: 2;
+}
+.tabs li a:after {
+	width: 10px; 
+	height: 10px;
+	/* Circles are circular */
+	-webkit-border-radius: 25px;
+	-moz-border-radius:    25px;
+	border-radius:         25px;
+	background-color: #B4CFEC;
+	right: -10px;
+	/* Circles over squares */
+	z-index: 2;
+}
+.tabs .active a:before {
+	background-color: white;/* These are the circles on the left and right of the active tab */
+	left: -13px;
+}
+.tabs .active a:after{
+	background-color: white;/* These are the circles on the left and right of the active tab */
+	right: -13px;
+}
+.tabs li:first-child.active a:before{
+	background-color: #B4CFEC;
+	left: -10px;
+}
+.tabs li:last-child.active a:after {
+	background-color: #B4CFEC;
+	right: -10px;
+}
+
+* { margin: 0; padding: 0; }
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+    zoom: 1;
+}
+/* This is the end of the CSS for the rounded tabs. */
+
+.spinner {
+	z-index:1234;
+	width:110px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	padding:5px 5px 5px 5px;
+}
+.response_options{ 
+	list-style: none;
+	float: left;
+	width:400px;
+	vertical-align:bottom;
+}
+.response_options li{ 
+	float: left; 
+	position: relative;
+	padding:0px 10px 0px 10px;
+	font-weight:bold;
+	cursor:pointer;
+	border:2px solid;
+	border-color:white;
+	color:#2B547E;
+}
+.response_options .up{
+
+}
+.response_options .down{
+
+}
+.response_options .conversation{
+
+}
+.response_options li:hover{
+	border-color:#B4CFEC;
+}
+div.list_of_best{
+	text-align:left;
+	width:700px;
+	padding:5px 10px 10px 5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+div.list_of_best a{
+	font-size:100%;
+	padding: 10px 10px 10px 10px;
+}
+div.list_of_reasons{
+	text-align:left;
+	width:700px;
+	padding:5px 10px 10px 5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+div.list_of_reasons a{
+	font-size:100%;
+	padding: 10px 10px 10px 10px;
+}
+div.conversation_area{
+	text-align:left;
+	width:700px;
+	padding:5px 10px 10px 5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.small_form_entry{
+	width:175px;
+	color:gray;
+	font-size:100%;
+}
+.medium_form_entry{
+	width:300px;
+	color:gray;
+	font-size:100%;
+}
+.large_form_entry{
+	width:97.5%;
+	color:gray;
+	font-size:100%;
+}
+#upload_contacts{
+	text-align:center;
+}
+.center{
+	text-align:center;
+}
+.middle .small_hint_text{
+	font-size:75%;
+	color:gray;
+}
+.td 90_text{
+	font-size:75%;
+	color:gray;
+}
+.larger{
+	font-size:150%;
+	font-weight:bold;
+	color:gray;
+}
+.search_hint_text{
+	font-size:75%;
+	color:red;
+	text-align:center;
+	vertical-align:top;
+}
+.hidden{
+	display: none;
+}
+.unhidden{
+	display: block;
+}

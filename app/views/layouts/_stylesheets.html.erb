@@ -1,0 +1,26 @@
+<%= stylesheet_link_tag 'css/slimbox2.css', :media => "screen" %>
+<%= stylesheet_link_tag 'css/main.css', :media => "screen" %>
+<%= javascript_include_tag  'js/main.js' %>
+<%= javascript_include_tag  'js/jquery-1.7.1.min.js' %>
+<%= javascript_include_tag  'js/slimbox2.js' %>
+<script>
+	$(function() {
+		$("li").click(function(e) {
+		 e.preventDefault();
+		 $("li").removeClass("active");
+		 $(this).addClass("active");
+		});
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#spinner").bind("ajaxSend", function() {
+			$(this).show();
+		}).bind("ajaxStop", function() {
+			$(this).hide();
+		}).bind("ajaxError", function() {
+			$(this).hide();
+		});
+	});
+</script>
+	
