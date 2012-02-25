@@ -1,0 +1,6 @@
+<%= @user.name %>, <%= @user.email %></br>
+<% unless @user.barks.empty? %>
+    <table>
+         <%= render @barks %>
+    </table>
+<% end %>

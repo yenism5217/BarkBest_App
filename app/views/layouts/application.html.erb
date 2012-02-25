@@ -9,7 +9,11 @@
 	<div id="wrapper">
 		<%= render 'layouts/header' %>
 		<div id="below_header">
-			<%= render 'layouts/tabsgroup' %>
+			<ul class="tabs group">
+				<li><%= link_to "Sniff", root_path, :onClick => "window.open('/','_self')"%></li>
+				<li class="active;"><%= link_to "Bark!", '/bark', :onClick => "window.open('/bark','_self')" %></li>
+				<li><%= link_to "Bite", '#' %></li>
+			</ul>
 			<div id="detail_central_container" class="central_container">
 				<%= yield %>
 			</div>

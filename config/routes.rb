@@ -1,6 +1,14 @@
 BarkBestApp::Application.routes.draw do
-  get "pages/bark"
-
+  resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
+  resources :barks
+  
+  match '/register', :to => 'users#new'
+  match '/login',  :to => 'sessions#new'
+  match '/logout', :to => 'sessions#destroy'
+  match '/bark', :to => 'pages#bark'
+  
+  root :to => 'pages#sniff'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -3,11 +3,16 @@
 		<tr>
 			<td class="logo">
 				<% logopic = image_tag("logo.png", :alt => "Bark!Best") %>
-				<%= link_to logopic, '#' %>
+				<%= link_to logopic, root_path %>
 			</td>
 			<td class="login">
-				<div class="login_link" ><%= link_to "Register", '#' %></div>
-				<div class="login_link" ><%= link_to "Login", '#' %></div>
+				<% if signed_in? %>
+				<div class="login_link" ><%= link_to "Logout", logout_path %></div>
+				<div class="login_link" ><%= link_to "Profile", current_user %></div>
+				<% else %>
+				<div class="login_link" ><%= link_to "Register", register_path %></div>
+				<div class="login_link" ><%= link_to "Login", login_path %></div>
+				<% end %>
 			</td>
 		</tr>
 	</table>

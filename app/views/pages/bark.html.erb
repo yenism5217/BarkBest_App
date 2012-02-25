@@ -1,3 +1,4 @@
+<% if signed_in? %>
 <div id="bark_hint" class="helpful_hint">
 	Share your opinion.  Inform your network.
 </div>
@@ -5,28 +6,7 @@
 	<table>
 		<tr>
 			<td class="search_image" rowspan="2"><%= image_tag("bark.png", :name => "search_image") %></td>
-			<td class="middle">
-				<%= text_field_tag "item", "The iPhone", :type => "text", :class => "rounded small_form_entry", :onFocus => "document.search_image.src = 'images/woof.png'; if(this.value == 'The iPhone') {this.value = '';}", :onBlur => "if (this.value == '') {this.value = 'The iPhone';}" %>
-			</td>
-			<td class="middle">&nbspis one of the best&nbsp</td>
-			<td class="middle">
-				<%= text_field_tag "category", "mobile phones of 2012", :type => "text", :class => "rounded small_form_entry", :onFocus => "if(this.value == 'mobile phones of 2012') {this.value = '';}", :onBlur => "if (this.value == '') {this.value = 'mobile phones of 2012';}" %>
-		</tr>
-		<tr>
-			<td colspan="3" class="middle">
-				<br>
-				<a class="small_hint_text">Add a reason below.  Optional: include a link if you wish!</a><br>
-				<%= text_field_tag "reason", "because...", :type => "text", :class => "rounded large_form_entry", :onFocus => "if(this.value == 'because...') {this.value = '';}", :onBlur => "if (this.value == '') {this.value = 'because...';}" %>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			</td>
-			<td colspan="3">
-				<div colspan="2" class="big_button" onclick="show_spinner('spinner1');">
-					Bark!
-				</div>
-			</td>
+			<%= render 'shared/bark_form' %>
 		</tr>
 	</table>
 </div>
@@ -35,3 +15,6 @@
 </div>
 <div id="spinner1" class="spinner" >
 </div>
+<% else %>
+<p>Register!</p>
+<% end %>

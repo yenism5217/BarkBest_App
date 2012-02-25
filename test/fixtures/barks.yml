@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  barkee: MyString
+  category: MyString
+  content: MyString
+  user_id: 1
+
+two:
+  barkee: MyString
+  category: MyString
+  content: MyString
+  user_id: 1

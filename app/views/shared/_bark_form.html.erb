@@ -1,0 +1,11 @@
+<%= form_for @bark do |f| %>
+  <div>
+    <%= f.text_field :barkee %> is one of the best <%= f.text_field :category %></br>
+  </div>
+  <div>
+	<%= f.text_field :content %>
+  </div>
+  <div>
+    <%= f.submit "Bark!" %>
+  </div>
+<% end %>
